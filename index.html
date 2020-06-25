@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/spacelab/bootstrap.min.css" rel="stylesheet" integrity="sha384-nl8CRcNYOGaXP68QRJeVTXCWAhwqBhRha0QbuubX1qDQpGT3GgclpvyzkR2JzyfZ" crossorigin="anonymous">
+    <title>Job List</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">My<span class="text-primary">JOB</span>List</h1>
+          <input type="text" id="filterInput" placeholder="Search names...">
+          <form id="job-form">
+            <div class="form-group">
+              <label for="name">Name and Surname</label>
+              <input type="text" id="name" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="job">JOB</label>
+              <input type="text" id="job" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="start">Start Date</label>
+              <input type="date" id="start" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="finish">Finish Date</label>
+              <input type="date" id="finish" class="form-control">
+            </div>
+            <input type="submit" value="Add JOB" class="btn btn-primary btn-block">
+          </form>
+          <table class="table table-striped mt-5">
+            <thead>
+              <tr>
+                <th>Name and Surname</th>
+                <th>Job</th>
+                <th>Start Date</th>
+                <th>Finish Date</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="job-list"></tbody>
+          </table>
+      </div>
+
+      <script src="main.js"></script>
+</body>
+</html>
